@@ -19,8 +19,7 @@ temp_min = st.number_input("temp_min (°C)", value=10.0)
 temp_max = st.number_input("temp_max (°C)", value=25.0)
 precipitation = st.number_input("precipitation (%)", value=70.0)
 precipitation = st.number_input("precipitation (%)", value=50.0)
-pressure_9am = st.number_input("Pressure 9am (hPa)", value=1012.0)
-pressure_3pm = st.number_input("Pressure 3pm (hPa)", value=1008.0)
+
 
 if st.button("Prediksi"):
     sample = np.array([[temp_min, temp_max, precipitation, precipitation, pressure_9am, pressure_3pm]])
